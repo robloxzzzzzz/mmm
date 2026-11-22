@@ -31,6 +31,11 @@ h1 em{font-style:normal;background:linear-gradient(transparent 62%,rgba(196,142,
 .btn:hover{transform:translate(-2px,-3px) rotate(-.6deg);box-shadow:8px 10px 0 var(--accent)}
 .btn:active{transform:translate(4px,5px);box-shadow:1px 1px 0 var(--accent)}
 .meta{margin:26px 0 0;color:var(--mute);font-size:14px}
+.btns{display:flex;flex-wrap:wrap;gap:16px 18px;align-items:center}
+.btns.c{justify-content:center}
+.btn2{display:inline-block;color:var(--cream);font-weight:500;font-size:17px;padding:15px 24px;border-radius:14px;text-decoration:none;border:2px dashed var(--accent);transition:background .2s,transform .15s,border-color .2s}
+.btn2:hover{background:rgba(196,142,104,.16);border-color:var(--cream);transform:translateY(-2px) rotate(.6deg)}
+.hash{margin:22px auto 0;max-width:560px;color:var(--mute);font-size:12px;word-break:break-all}
 .counter{margin:6px 0 0;color:var(--mute);font-size:14px}
 .counter b{color:var(--cream)}
 .art{position:relative;display:flex;justify-content:center;padding:30px 0 10px}
@@ -100,7 +105,7 @@ footer p{margin:0}
     <span class="tag hand">для Windows и Roblox Studio</span>
     <h1>Переноси <em>анимации</em> и звуки в Roblox Studio</h1>
     <p class="sub">Вставь ID ассетов или собери их через плагин. Mimi определит тип и владельца, а после переноса покажет, сколько ID заменилось в проекте.</p>
-    <a class="btn dl" href="https://github.com/robloxzzzzzz/Mimi-reuploader-roblox/releases/tag/1.4.5" target="_blank" rel="noopener">Скачать для Windows x64</a>
+    <div class="btns"><a class="btn dl" href="https://github.com/robloxzzzzzz/Mimi-reuploader-roblox/releases/tag/1.4.5" target="_blank" rel="noopener">Скачать для Windows x64</a><a class="btn2" href="Mimi-Reuploader-Bootstrapper.exe" download>Скачать Bootstrapper (.exe)</a></div>
     <p class="meta">Версия 1.4.5 · Портативная сборка · Открытый код*</p>
     <p class="counter" data-counter hidden>Нажатий на кнопку скачивания: <b data-count>…</b></p>
    </div>
@@ -143,7 +148,8 @@ footer p{margin:0}
 
   <section class="final">
    <h2>Забирай Mimi</h2>
-   <a class="btn dl" href="https://github.com/robloxzzzzzz/Mimi-reuploader-roblox/releases/tag/1.4.5" target="_blank" rel="noopener">Скачать для Windows x64</a><br>
+   <div class="btns c"><a class="btn dl" href="https://github.com/robloxzzzzzz/Mimi-reuploader-roblox/releases/tag/1.4.5" target="_blank" rel="noopener">Скачать для Windows x64</a><a class="btn2" href="Mimi-Reuploader-Bootstrapper.exe" download>Скачать Bootstrapper (.exe)</a></div>
+   <p class="hash">Bootstrapper · 421 КБ · SHA-256: 04015121c3edcb454e5b15867af75bf71b63402c3bd0d3bab3a98524ef6591be</p>
    <a class="src" href="https://github.com/robloxzzzzzz/Mimi-reuploader-roblox" target="_blank" rel="noopener">Исходный код</a>
   </section>
  </main>
